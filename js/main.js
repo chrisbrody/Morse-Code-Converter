@@ -60,7 +60,11 @@ function userEnglishInput() {
     	return replaceObj[matched];
     });
     document.getElementById('morse').innerHTML = english2;
-    document.getElementById('english').innerHTML = english;
     console.log(english2.trim());
+    if (english.length === 0) {
+    	document.getElementById('morseWrapper').style.display="none";
+    } else{
+    	document.getElementById('morseWrapper').style.display="block";
+    };
     
 }
