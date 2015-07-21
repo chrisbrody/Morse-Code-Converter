@@ -1,6 +1,6 @@
-
+var english, english2;
 function userEnglishInput() {
-    var english = document.getElementById('englishInput').value.toLowerCase();
+    english = document.getElementById('englishInput').value.toLowerCase();
     var replaceObj = {
     	a: '.- / ',
     	b: '-... / ',
@@ -49,14 +49,8 @@ function userEnglishInput() {
     	' ': "",
     	'?': '..--.. / ',
     	'\/': '-..-. / '
-
-
     }
-    english2 = english.replace(/a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|0|1|2|3|4|5|6|7|8|9|@|.|,|:|"|'|=|\s+|[?=]|\//gi, function(matched) {
-    	
-    	if (replaceObj[matched] == undefined) {
-    		this.splice();
-    	} 
+    english2 = english.replace(/a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z|0|1|2|3|4|5|6|7|8|9|@|.|,|:|"|'|=|\s+|[?=]|\//gi, function(matched) {   	
     	return replaceObj[matched];
     });
     document.getElementById('morse').innerHTML = english2;
@@ -67,4 +61,9 @@ function userEnglishInput() {
     	document.getElementById('morseWrapper').style.display="block";
     };
     
+}
+function runScript(e) {
+    if (e.keyCode == 13) {
+        return false;
+    }
 }

@@ -7,19 +7,14 @@
 		<title>Morse Code Converter</title>
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" href="css/main.min.css">
 	</head>
 	<body>
 
 		<section>
 			<div>
-				
-				
-			</div>
-			<div>
-				<h1>Start Typing to Convert to Morse Code</h1>
-				<textarea autofocus type="text" id="englishInput" onkeyup="userEnglishInput()" rows="3"></textarea>
-
+				<h1 class="animated zoomInDown">Start Typing to Convert to Morse Code</h1>
+				<textarea class="animated zoomInUp" autofocus type="text" id="englishInput" onkeyup="userEnglishInput()" onkeypress="return runScript(event)" rows="3"></textarea>
 			</div>
 			<div id="morseWrapper">
 				<h2>Coverted Morse Code</h2>
@@ -27,6 +22,6 @@
 			</div>
 		</section>
 
-	<script src="js/main.js"></script>
+	<script src="js/main.min.js"></script>
 	</body>
 </html>
