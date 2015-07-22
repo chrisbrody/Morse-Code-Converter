@@ -67,10 +67,11 @@ button:focus {
   display: none;
 }
 #morse {
-  width: 40%;
+  width: 75%;
   margin: 0 auto;
   height: 100px;
-  overflow: auto
+  overflow: auto;
+  font-size: 20px;
 }
 ::-moz-selection {
     background: rgba(255,255,255, 0.4);
