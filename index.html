@@ -12,9 +12,13 @@
 	<body>
 
 		<section>
-			<div>
-				<h1 class="animated zoomInDown">Start Typing to Convert to Morse Code</h1>
-				<textarea class="animated zoomInUp" autofocus type="text" id="englishInput" onkeyup="userEnglishInput()" onkeypress="return runScript(event)" rows="3"></textarea>
+			<div class="animated zoomInDown">
+				<h1>Start Typing to Convert to Morse Code</h1>
+				<textarea autofocus id="englishInput" onkeyup="userEnglishInput()" onkeypress="return runScript(event)" rows="3"></textarea>
+				<br>
+				<br>
+				<button onclick="translateToMorse()">Translate</button>
+				<button style="margin-left:3px;" onclick="resetTranslate()">Reset</button>
 			</div>
 			<div id="morseWrapper">
 				<h2>Coverted Morse Code</h2>

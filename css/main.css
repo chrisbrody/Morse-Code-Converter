@@ -1,42 +1,76 @@
 html, section {
-	height: 100%;
+  height: 100%;
 }
 body {
-	background-image: url(../img/bg1.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	position: absolute;
-	top: 0;
+  background-image: url(../img/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 0;
 }
 section {
-	background-color: rgba(0,0,0,0.7);
-	position: absolute;
-	top: 0;
-	width: 100%;
-	color: #FFF;
-	text-align: center;
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #FFF;
+  text-align: center;
 }
 h1 {
-	padding: 17% 0 1%;
+  padding: 17% 0 1%;
 }
 textarea {
-	width: 40%;
-	background-color: transparent;
-	color: #FFF;
-	padding: 1%;
-	border-radius: 6px;
+  width: 40%;
+  background-color: rgba(0,0,0, 0.5);
+  color: #FFF;
+  padding: 1%;
+  border-radius: 6px;
+  border-color: #000;
+}
+button {
+  color: #fff;
+  background-color: rgba(0,0,0, 0.3);
+  border: 1px solid #000;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border-radius: 4px;
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+  width: 100px;
+}
+button:hover,
+button:focus {
+  color: #fff;
+  background-color: rgba(0,0,0, 0.7);
+  border-color: #000;
 }
 #morseWrapper {
-	display: none;
+  display: none;
 }
 #morse {
-	width: 40%;
-	margin: 0 auto;
-	height: 100px;
-	overflow: auto
+  width: 40%;
+  margin: 0 auto;
+  height: 100px;
+  overflow: auto
 }
 ::-moz-selection {
     background: rgba(255,255,255, 0.4);
@@ -50,10 +84,10 @@ textarea {
       width: 5px;
 }
 ::-webkit-scrollbar-track-piece {
-	background-color: #000;
+  background-color: #000;
 }
 ::-webkit-scrollbar-thumb {
-	background-color:#fff;
+  background-color:#fff;
 }
 @charset "UTF-8";
 .animated {
